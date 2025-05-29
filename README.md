@@ -1,4 +1,4 @@
-# Proyecto_Fundamentos
+#Proyecto_Fundamentos
 """
 Teclado Estenógrafo en Español para Raspberry Pi Pico W
 
@@ -20,11 +20,11 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 import time
 
-# Configuración del teclado HID
+#Configuración del teclado HID
 kbd = Keyboard(usb_hid.devices)
 
-# Mapeo de pines GPIO a letras del teclado estenógrafo
-# Según la imagen proporcionada
+#Mapeo de pines GPIO a letras del teclado estenógrafo
+#Según la imagen proporcionada
 PIN_MAP = {
     board.GP1: 'M',   # Fila superior izquierda
     board.GP2: 'S',
@@ -52,7 +52,7 @@ PIN_MAP = {
     board.GP28: 'U'
 }
 
-# Mapeo para modo numérico (GP1-GP12 excepto GP7 y GP10)
+#Mapeo para modo numérico (GP1-GP12 excepto GP7 y GP10)
 NUMERIC_MAP = {
     board.GP1: '1',   # M -> 1
     board.GP2: '2',   # S -> 2
